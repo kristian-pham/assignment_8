@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="assets/css/tablet.css" rel="stylesheet" media="screen and (max-width: 1024px)">
   <link href="assets/css/stylesheet.css" rel="stylesheet" type="text/css">
   <link href="assets/css/bootstrap.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +19,7 @@
 <body>
 
 <div class="container">
+
   <nav class="navbar visible-sm-block visible-md-block visible-lg-block navbar-fixed-top">
       <ul>
           <li><a href="#splash" id="logo">KRISPY</a></li>
@@ -33,31 +35,31 @@
   <section id="work">
       <h1>WORK</h1>
       <div class="row" style="margin-top 60px;">
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <img
+            class="work-photo"
             src="https://images.squarespace-cdn.com/content/v1/5b065665e2ccd14a53d98ce5/1605992968119-KVQ94V4J3E57QFXW0ZFR/cvrp_jacket.jpg?format=1500w"
             width="481"
             height="641"
-            style="width: 100%; height: 300px; object-fit: cover;"
-            alt="The back of Kristian in front of the Wilamette River."
+            alt="Person wearing a black track jacket with the Clean Vehicle Rebate Project logo on the back."
           />
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <img
+            class="work-photo"
             src="https://images.squarespace-cdn.com/content/v1/5b065665e2ccd14a53d98ce5/1529630625121-CJDIH1COMIGTOXE56V4Q/Water+You+Doing.jpg?format=1500w"
             width="481"
             height="641"
-            style="width: 100%; height: 300px; object-fit: cover;"
-            alt="The back of Kristian in front of the Wilamette River."
+            alt="A poster with 'Water You Doing' on a bus stop in front of a bay."
           />
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <img
+            class="work-photo"
             src="https://images.squarespace-cdn.com/content/v1/5b065665e2ccd14a53d98ce5/1608969304149-IKMG2656JRO6VVQR63T7/logo_mockup.jpg?format=2500w"
             width="481"
             height="641"
-            style="width: 100%; height: 300px; object-fit: cover;"
-            alt="The back of Kristian in front of the Wilamette River."
+            alt="Logo of Electric Program Investment Charge debossed on a piece of paper."
           />
         </div>
       </div>
@@ -65,17 +67,16 @@
   <section id="about">
       <h1>ABOUT</h1>
       <div class="row">
-        <div class="col-md-4">
-          <img
+        <div class="col-lg-4">
+          <img id="about-pic"
             src="https://images.squarespace-cdn.com/content/v1/5b065665e2ccd14a53d98ce5/1606528769409-SD9J0V5Y7SVZKJAWZYSD/bio_pic.jpg?format=1000w"
             width="481"
             height="641"
-            style="width: 100%; height: 300px; object-fit: cover; padding-right: 0px;"
-            alt="The back of Kristian in front of the Wilamette River."
+            alt="The back of Kristian in front of the Wilamette River.""
           />
         </div>
-        <div class="col-md-8">
-          <p class="lead copy">
+        <div class="col-lg-8">
+          <p class="copy">
             Kristian is a multidisciplinary designer based in Southern California.
             With an interest in the <strong>social impact of design</strong>, he
             pays special attention to the effects visual design has on the human
@@ -97,9 +98,22 @@
         </div>
       </div>
   </section>
+
   <section id="contact">
       <h1>CONTACT</h1>
-      <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
+      <div class="form-container">
+        <form action="action_page.php">
+
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+
+        </form>
+      </div>
   </section>
 </div>
 

@@ -1,0 +1,20 @@
+/* RESPONSIVE RULES FOR TABLET*/
+
+@media only screen and (max-width: 1024px) {
+  #about-pic{
+    height: 450px !important;
+    width: 1024px !important;
+    padding-bottom: 35px;
+  }
+
+  .copy{
+    font-size: 15pt !important;
+  }
+
+  .work-photo{
+    width: 1024px !important;
+    height: 300px;
+    object-fit: cover;
+    padding-bottom: 20px;
+  }
+}
